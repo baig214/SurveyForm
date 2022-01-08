@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <form action="/" method="post" id="surveyForm" class="form-check">
+     <!-- Name Details -->
+     <label><strong> Name</strong></label> <br>
+    <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+      <!-- Email Detail -->
+        <div class="form-group" id="mail">
+           <strong> Email: </strong> <br> <input type="email"  class="form-control" placeholder="Enter Your Mail Id">
+        </div> <br>
+        <!-- User Experience -->
+        <label> <strong>Your Experience </strong> </label> 
+
+        <div class="rating-css">
+
+            <div class="star-icon">
+              <input type="radio" name="rating1" id="rating1">
+              <label for="rating1" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating2">
+              <label for="rating2" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating3">
+              <label for="rating3" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating4">
+              <label for="rating4" class="fa fa-star"></label>
+              <input type="radio" name="rating1" id="rating5">
+              <label for="rating5" class="fa fa-star"></label>
+            </div>
+          </div> <br>
+
+          <!-- To Check the user Satisfaction -->
+        <div class="form-check">
+            <strong> How are you satisfied with? </strong> <br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Very Unsatisfied</th>
+                      <th scope="col">Unsatisfied</th>
+                      <th scope="col">Neutral</th>
+                      <th scope="col"> satisfied</th>
+                      <th scope="col">Very Satisfied</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+            <tr>
+                <th scope="row"> Purchase</th>
+                <td><input type="radio" name="radioBtn1"></td>
+                <td><input type="radio" name="radioBtn1"></td>
+                <td><input type="radio" name="radioBtn1"></td>
+                <td><input type="radio" name="radioBtn1"></td>
+                <td><input type="radio" name="radioBtn1"></td>
+            </tr>
+            <tr>
+                <th scope="row"> Service</th>
+                <td><input type="radio" name="radioBtn2"></td>
+                <td><input type="radio" name="radioBtn2"></td>
+                <td><input type="radio" name="radioBtn2"></td>
+                <td><input type="radio" name="radioBtn2"></td>
+                <td><input type="radio" name="radioBtn2"></td>
+            </tr>
+            <tr>
+                <th scope="row"> Company Overall</th>
+                <td><input type="radio" name="radioBtn3"></td>
+                <td><input type="radio" name="radioBtn3"></td>
+                <td><input type="radio" name="radioBtn3"></td>
+                <td><input type="radio" name="radioBtn3"></td>
+                <td><input type="radio" name="radioBtn3"></td>
+            </tr>
+        </tbody>
+        </table>
+        <br>
+        <!-- Radio Buttons for user feedback -->
+        <div>
+            How likely are you to <br> <br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Very Unlikely</th>
+                      <th scope="col">Unlikely</th>
+                      <th scope="col">Neutral</th>
+                      <th scope="col"> Likely</th>
+                      <th scope="col">Very likely</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+            <tr>
+                <th scope="row"> Buy From Us Again</th>
+                <td><input type="radio" name="radioBtn4"></td>
+                <td><input type="radio" name="radioBtn4"></td>
+                <td><input type="radio" name="radioBtn4"></td>
+                <td><input type="radio" name="radioBtn4"></td>
+                <td><input type="radio" name="radioBtn4"></td>
+            </tr>
+            <tr>
+                <th scope="row"> Recommend Our Products To Others</th>
+                <td><input type="radio" name="radioBtn5"></td>
+                <td><input type="radio" name="radioBtn5"></td>
+                <td><input type="radio" name="radioBtn5"></td>
+                <td><input type="radio" name="radioBtn5"></td>
+                <td><input type="radio" name="radioBtn5"></td>
+            </tr>
+            <tr>
+                <th scope="row"> Recommend Our company to others</th>
+                <td><input type="radio" name="radioBtn6"></td>
+                <td><input type="radio" name="radioBtn6"></td>
+                <td><input type="radio" name="radioBtn6"></td>
+                <td><input type="radio" name="radioBtn6"></td>
+                <td><input type="radio" name="radioBtn6"></td>
+            </tr>
+        </tbody>
+        </table>
+        </div> <br>
+        <br>
+        <!-- Comments and Suggestions by user -->
+        <div>
+            <strong>Additional Comments Or Suggestions.</strong> <br>
+            <textarea name="Comment id="inputComment" class="form-control" rows="3" required="required"></textarea>
+    
+        </div><br>
+
+<!--  Submit Button -->
+        <input type="submit" class="btn btn-primary">
+    </form>
+
+</body>
+</html>
