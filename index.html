@@ -15,22 +15,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1 align="center"> Survey Form</h1>
-
- <form name="surveyForm" action="mailto: mohammedhannan13@gmail.com" method="post" id="surveyForm" class="form-check" enctype="text/plain" data-netlify="true">
+  <p><h1 align="center" font="Calibri">Survey Form</h1></p>
+ <form  method="post" id="surveyForm" class="form-check" data-netlify="true">
      <!-- Name Details -->
      <label><strong> Name</strong></label> <br>
     <div class="row g-3">
         <div class="col">
-          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="fname">
         </div>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lname">
         </div>
       </div>
       <!-- Email Detail -->
         <div class="form-group" id="mail">
-           <strong> Email: </strong> <br> <input type="email"  class="form-control" placeholder="Enter Your Mail Id">
+           <strong> Email: </strong> <br> <input type="email"  class="form-control" placeholder="Enter Your Mail Id" name="email">
         </div> <br>
         <!-- User Experience -->
         <label> <strong>Your Experience </strong> </label> 
@@ -68,27 +67,27 @@
                   <tbody>
             <tr>
                 <th scope="row"> Purchase</th>
-                <td><input type="radio" name="radioBtn1"></td>
-                <td><input type="radio" name="radioBtn1"></td>
-                <td><input type="radio" name="radioBtn1"></td>
-                <td><input type="radio" name="radioBtn1"></td>
-                <td><input type="radio" name="radioBtn1"></td>
+                <td><input type="radio" name="PurchaseBtn" VALUE="1"></td>
+                <td><input type="radio" name="PurchaseBtn" value="2"></td>
+                <td><input type="radio" name="PurchaseBtn" value="3" checked></td>
+                <td><input type="radio" name="PurchaseBtn" value="4"></td>
+                <td><input type="radio" name="PurchaseBtn" value="5"></td>
             </tr>
             <tr>
                 <th scope="row"> Service</th>
-                <td><input type="radio" name="radioBtn2"></td>
-                <td><input type="radio" name="radioBtn2"></td>
-                <td><input type="radio" name="radioBtn2"></td>
-                <td><input type="radio" name="radioBtn2"></td>
-                <td><input type="radio" name="radioBtn2"></td>
+                <td><input type="radio" name="ServiceBtn" value="1"></td>
+                <td><input type="radio" name="ServiceBtn" value="2"></td>
+                <td><input type="radio" name="ServiceBtn" value="3" checked></td>
+                <td><input type="radio" name="ServiceBtn" value="4"></td>
+                <td><input type="radio" name="ServiceBtn" value="5"></td>
             </tr>
             <tr>
                 <th scope="row"> Company Overall</th>
-                <td><input type="radio" name="radioBtn3"></td>
-                <td><input type="radio" name="radioBtn3"></td>
-                <td><input type="radio" name="radioBtn3"></td>
-                <td><input type="radio" name="radioBtn3"></td>
-                <td><input type="radio" name="radioBtn3"></td>
+                <td><input type="radio" name="CompanyBtn" value="1"></td>
+                <td><input type="radio" name="CompanyBtn" value="2"></td>
+                <td><input type="radio" name="CompanyBtn" value="3" checked></td>
+                <td><input type="radio" name="CompanyBtn" value="4"></td>
+                <td><input type="radio" name="CompanyBtn" value="5"></td>
             </tr>
         </tbody>
         </table>
@@ -110,27 +109,27 @@
                   <tbody>
             <tr>
                 <th scope="row"> Buy From Us Again</th>
-                <td><input type="radio" name="radioBtn4"></td>
-                <td><input type="radio" name="radioBtn4"></td>
-                <td><input type="radio" name="radioBtn4"></td>
-                <td><input type="radio" name="radioBtn4"></td>
-                <td><input type="radio" name="radioBtn4"></td>
+                <td><input type="radio" name="FeedbackBuy" value="1"></td>
+                <td><input type="radio" name="FeedbackBuy" value="2"></td>
+                <td><input type="radio" name="FeedbackBuy" value="3" checked></td>
+                <td><input type="radio" name="FeedbackBuy" value="4"></td>
+                <td><input type="radio" name="FeedbackBuy" value="5"></td>
             </tr>
             <tr>
                 <th scope="row"> Recommend Our Products To Others</th>
-                <td><input type="radio" name="radioBtn5"></td>
-                <td><input type="radio" name="radioBtn5"></td>
-                <td><input type="radio" name="radioBtn5"></td>
-                <td><input type="radio" name="radioBtn5"></td>
-                <td><input type="radio" name="radioBtn5"></td>
+                <td><input type="radio" name="RecProduct" value="1"></td>
+                <td><input type="radio" name="RecProduct" value="2"></td>
+                <td><input type="radio" name="RecProduct" value="3" checked></td>
+                <td><input type="radio" name="RecProduct" value="4"></td>
+                <td><input type="radio" name="RecProduct" value="5"></td>
             </tr>
             <tr>
                 <th scope="row"> Recommend Our company to others</th>
-                <td><input type="radio" name="radioBtn6"></td>
-                <td><input type="radio" name="radioBtn6"></td>
-                <td><input type="radio" name="radioBtn6"></td>
-                <td><input type="radio" name="radioBtn6"></td>
-                <td><input type="radio" name="radioBtn6"></td>
+                <td><input type="radio" name="RecCompany" value="1"></td>
+                <td><input type="radio" name="RecCompany" value="2"></td>
+                <td><input type="radio" name="RecCompany" value="3" checked></td>
+                <td><input type="radio" name="RecCompany" value="4"></td>
+                <td><input type="radio" name="RecCompany" value="5"></td>
             </tr>
         </tbody>
         </table>
