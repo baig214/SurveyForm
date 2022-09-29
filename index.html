@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    var OrgName= sessionStorage.setItem("Orgname", "Excelid");
+    
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+    'event':'userData',
+      'OrganizationName':'GITOrgName'
+    });
+  </script>
   	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -21,13 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
-    var OrgName= sessionStorage.setItem("Orgname", "Excelid");
-    
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-    'event':'userData',
-      'OrganizationName':'GITOrgName'
-    });
+//     var OrgName= sessionStorage.setItem("Orgname", "Excelid");
    
     gtag('set', 'user_properties', {
   'dimension1': OrgName
