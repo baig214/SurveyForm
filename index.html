@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-    var OrgName= sessionStorage.setItem("Orgname", "Excelid");
-    var RolName = sessionStorage.setItem("roleName", "Student");
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-    'event':'userData',
-      'OrganizationName':sessionStorage.getItem("Orgname"),
-      'RoleName':RolName,
-      'UserName':'Hannan Baig'
-    });
-  </script>
+
   	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -31,18 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-//     var OrgName= sessionStorage.setItem("Orgname", "Excelid");
-   
-    gtag('set', 'user_properties', {
-  'dimension1': OrgName
-});
-    function OrgName(){
-    return "ExcelIndia";
-    }
-    
-    document.cookie = "Orgname=ExcelIndia";
-  </script>
+
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -180,5 +159,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <input type="submit" class="btn btn-primary">
     </form>
 
+    <script>
+    var OrgName= sessionStorage.setItem("Orgname", "Excelid");
+    var RolName = sessionStorage.setItem("roleName", "Student");
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+    'event':'userData',
+      'OrganizationName':sessionStorage.getItem("Orgname"),
+      'RoleName':RolName,
+      'UserName':'Hannan Baig'
+    });
+  </script>
 </body>
 </html>
