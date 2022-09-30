@@ -3,12 +3,12 @@
 <head>
   <script>
     var OrgName= sessionStorage.setItem("Orgname", "Excelid");
-    
+    var RolName = sessionStorage.setItem("roleName", "Student");
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
     'event':'userData',
-      'OrganizationName':'ExcelIndia',
-      'RoleName':'Teacher',
+      'OrganizationName':sessionStorage.getItem("Orgname"),
+      'RoleName':RolName,
       'UserName':'Hannan Baig'
     });
   </script>
